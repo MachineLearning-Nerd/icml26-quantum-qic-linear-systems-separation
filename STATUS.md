@@ -10,3 +10,6 @@ GitHub repository: https://github.com/MachineLearning-Nerd/icml26-repro-eTUljZ6e
 Current phase: claim_1_attempt_1_source_local_audit
 Per-claim state: C1 source/local audit in progress; C2-C5 unstarted
 Publication status: not published
+
+Claim 1 Attempt 1 result: toy. Local CPU clean-room finite height-4 two-binary-tree alternating-cycle random-walk oracle fixture (5 seeds, 10,000 walks/seed, 256 steps/walk) achieved mean target-root hit probability 0.78006; destructive removal of cross-tree cycle edges gave 0.0. Evidence: outputs/claim1_random_walk_oracle_fixture/. This is not a QIC lower-bound or quantum-runtime verification.
+Current phase: claim_1_attempt_1_random_walk_oracle_toy_complete

@@ -1,0 +1,9 @@
+{
+  "protocol": "clean-room finite oracle-neighbor random-walk fixture based on pinned lower.tex:6-18",
+  "verdict": "toy",
+  "scope": "height-4 finite random-walk oracle diagnostic; not a QIC query lower-bound proof or quantum runtime reproduction",
+  "connected_cycle_mean_hit_probability": 0.78006,
+  "broken_cross_tree_mean_hit_probability": 0.0,
+  "control_expected_zero": true,
+  "rows": 10
+}

@@ -1,0 +1,13 @@
+{
+  "out": "outputs/claim1_random_walk_oracle_fixture",
+  "height": 4,
+  "walks": 10000,
+  "steps": 256,
+  "seeds": [
+    20260801,
+    20260802,
+    20260803,
+    20260804,
+    20260805
+  ]
+}

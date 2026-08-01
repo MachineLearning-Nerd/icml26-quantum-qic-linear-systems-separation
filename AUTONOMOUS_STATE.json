@@ -1,25 +1,32 @@
 {
   "schema_version": 1,
   "openreview_id": "eTUljZ6e8c",
-  "phase": "claim_1_attempt_1_source_local_audit",
-  "next_action": "launch_claim_1_direct_random_walk_oracle_fixture",
+  "phase": "claim_1_attempt_1_random_walk_oracle_toy_complete",
+  "next_action": "independent_claim_1_toy_review_then_claim_2_direct_formula_fixture",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
     "live_contract_saved",
     "source_pinned",
-    "claim_1_protocol_scaffold"
+    "claim_1_protocol_scaffold",
+    "claim_1_attempt_1_local_random_walk_oracle_fixture"
   ],
   "failed_attempts": [],
   "claim_attempt_counts": {
-    "1": 0,
+    "1": 1,
     "2": 0,
     "3": 0,
     "4": 0,
     "5": 0
   },
-  "last_checkpoint": "2026-08-01T16:30:38Z",
-  "last_known_git_commit": "5a1d2d50c39b8fc4e2855612fb32e962639de9c9",
+  "last_checkpoint": "2026-08-01T18:30:38Z",
+  "last_known_git_commit": "PENDING_COMMIT",
   "publication_allowed": false,
-  "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute"
+  "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "claim_1_outcome": {
+    "verdict": "toy",
+    "scope": "Clean-room finite height-4 two-binary-tree alternating-cycle random-walk oracle fixture with neighbor queries; not a QIC lower-bound proof or quantum runtime reproduction.",
+    "evidence": "outputs/claim1_random_walk_oracle_fixture/summary.json",
+    "negative_control": "Broken cross-tree cycle yields zero target-root hits."
+  }
 }
