@@ -19,7 +19,7 @@
     "5": 0
   },
   "last_checkpoint": "2026-08-01T16:30:38Z",
-  "last_known_git_commit": "4157bacf906d15cca5803027cf7e19baa514ece5",
+  "last_known_git_commit": "6220e4f5de1dc7cfcebea5dd69200362a70360f1",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute"
 }
