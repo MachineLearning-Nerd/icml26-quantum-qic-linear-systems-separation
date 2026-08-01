@@ -1,6 +1,7 @@
-import json,hashlib
+import json,hashlib,sys
 from pathlib import Path
 D=Path(__file__).parents[1]
+sys.path.insert(0, str(D))
 def test_contract_has_five_claims(): assert len(json.loads((D/'contract/live_claims.json').read_text()))==5
 def test_source_manifest():
  for line in (D/'evidence/source/SHA256SUMS').read_text().splitlines():
