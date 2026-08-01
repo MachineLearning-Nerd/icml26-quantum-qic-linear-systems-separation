@@ -1,0 +1,20 @@
+{
+  "i": 11696,
+  "pid": "62675",
+  "orid": "eTUljZ6e8c",
+  "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
+  "authors": [
+    "Allan Gr\u00f8nlund",
+    "Kasper Green Larsen"
+  ],
+  "insts": [],
+  "area": "Theory",
+  "sub": "Everything Else",
+  "type": "Poster",
+  "spot": false,
+  "or": "https://openreview.net/forum?id=eTUljZ6e8c",
+  "vs": "https://icml.cc/virtual/2026/poster/62675",
+  "arxiv": "2411.02087",
+  "alphaxiv": "2411.02087",
+  "hf": ""
+}

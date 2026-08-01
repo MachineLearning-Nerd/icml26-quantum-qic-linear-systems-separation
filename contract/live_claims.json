@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Theorem 1 proves that any quantum-inspired classical (QIC) algorithm for solving well-conditioned, sparse linear systems requires \u03a9(n^{1/12}) queries, while the corresponding quantum algorithm runs in poly(ln n) time, establishing the first exponential separation between the two (Theorem 1).",
+    "status": "unverified"
+  },
+  {
+    "text": "The quantum upper bound for sparse linear systems scales as poly(s, \u03ba, ln(1/\u03b5), ln n), where s is sparsity and \u03ba is the condition number (Equation 1).",
+    "status": "unverified"
+  },
+  {
+    "text": "The proof reduces hardness of the QIC lower bound to a random walk oracle game on two binary trees, building on the construction of Childs et al. (Theorem 2, Section 2.1).",
+    "status": "unverified"
+  },
+  {
+    "text": "Lemma 2 shows the solution component corresponding to the target root vertex satisfies x_i^2 = \u03a9(n^{-5}||x||^2), which is what enables efficient quantum sampling but not efficient QIC sampling (Lemma 2).",
+    "status": "unverified"
+  },
+  {
+    "text": "The result demonstrates that quantum machine learning speedups on natural tasks are not universally reproducible by quantum-inspired classical algorithms, resolving an open question in the dequantization literature (Section 1).",
+    "status": "unverified"
+  }
+]

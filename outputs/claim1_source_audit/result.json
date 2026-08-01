@@ -1,0 +1,13 @@
+{
+  "n": 64,
+  "sparsity_max": 2,
+  "kappa_fixture": 4.0,
+  "epsilon": 0.01,
+  "quantum_formula_variables": [
+    "s",
+    "kappa",
+    "log(1/epsilon)",
+    "log(n)"
+  ],
+  "scope": "finite source-audited CPU fixture; not a QIC lower-bound or quantum runtime reproduction"
+}

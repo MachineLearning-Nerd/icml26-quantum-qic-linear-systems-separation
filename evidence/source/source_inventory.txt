@@ -1,0 +1,11 @@
+00README.json
+abstract.tex
+acknowledgment.tex
+boundingEigs.tex
+forrelation.tex
+intro.tex
+lower.tex
+main.tex
+refs.bib
+spectral.tex
+understandSol.tex

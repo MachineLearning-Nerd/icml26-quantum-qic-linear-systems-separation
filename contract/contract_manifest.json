@@ -1,0 +1,20 @@
+{
+  "retrieved_at_utc": "2026-08-01T16:30:38Z",
+  "openreview_id": "eTUljZ6e8c",
+  "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
+  "submission_number": 11696,
+  "claim_count": 5,
+  "maximum_points": 10,
+  "claim_resolution": "claims_anchored.json replaces claims.json on matching OpenReview ID; no override found",
+  "source_urls": {
+    "index": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/index.json",
+    "claims": "https://icml-2026-agent-repro-challenge.static.hf.space/claims.json",
+    "claims_anchored": "https://icml-2026-agent-repro-challenge.static.hf.space/claims_anchored.json",
+    "readme": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/README.md"
+  },
+  "sha256": {
+    "metadata.json": "4f02b4203d25ce9ca7947f431225d97f646f0cbd33af1060249140a60c8ed823",
+    "live_claims.json": "e1dabeadc76e4f7be48b96eb8819e2c1c339f324adc85ce857d2e0ec3aff4121",
+    "challenge_readme.md": "027f66e6da758c4a0d75fff6c9298e5322dde64d21a97d33e4367e42c3a421c5"
+  }
+}
