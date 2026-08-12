@@ -19,10 +19,11 @@
     "4": 0,
     "5": 0
   },
-  "last_checkpoint": "2026-08-01T18:30:38Z",
-  "last_known_git_commit": "PENDING_COMMIT",
+  "last_checkpoint": "2026-08-12T21:39:43Z",
+  "last_known_git_commit": "1b55b20e2cfe757abd62dec6f8361c574d9c9aa3",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
   "claim_1_outcome": {
     "verdict": "toy",
     "scope": "Clean-room finite height-4 two-binary-tree alternating-cycle random-walk oracle fixture with neighbor queries; not a QIC lower-bound proof or quantum runtime reproduction.",
