@@ -28,5 +28,11 @@
     "scope": "Clean-room finite height-4 two-binary-tree alternating-cycle random-walk oracle fixture with neighbor queries; not a QIC lower-bound proof or quantum runtime reproduction.",
     "evidence": "outputs/claim1_random_walk_oracle_fixture/summary.json",
     "negative_control": "Broken cross-tree cycle yields zero target-root hits."
+  },
+  "documentation": {
+    "readme": "complete",
+    "branch_audit": "complete",
+    "citation_and_thank_you": "complete",
+    "repository_rename": "pending_publication_verification"
   }
 }
