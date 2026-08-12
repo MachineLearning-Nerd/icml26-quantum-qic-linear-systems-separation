@@ -20,7 +20,7 @@
     "5": 0
   },
   "last_checkpoint": "2026-08-12T21:39:43Z",
-  "last_known_git_commit": "1b55b20e2cfe757abd62dec6f8361c574d9c9aa3",
+  "last_known_git_commit": "c032533ee1315dc3549ca0b4a062c165e3923f45",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
@@ -34,6 +34,7 @@
     "readme": "complete",
     "branch_audit": "complete",
     "citation_and_thank_you": "complete",
-    "repository_rename": "pending_publication_verification"
+    "repository_rename": "complete",
+    "final_publication_verification": "complete"
   }
 }

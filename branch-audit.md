@@ -18,7 +18,7 @@ The target repository name is `icml26-quantum-qic-linear-systems-separation`: th
 
 ## Attribution policy
 
-All reachable commits will be normalized to:
+All reachable commits are normalized to:
 
 ```text
 MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>
@@ -30,7 +30,7 @@ This identity describes the collection owner’s published commit attribution. I
 
 - [x] Default branch is `main`.
 - [x] Only the documented branch exists.
-- [ ] Repository name is descriptive and consistent with the collection.
-- [ ] Reachable commit author and committer identities are normalized.
+- [x] Repository name is descriptive and consistent with the collection.
+- [x] Reachable commit author and committer identities are normalized.
 - [x] README explains the paper, claims, evidence paths, status, citation, and thank-you note.
 - [x] No historical `orx/*` reference remains.
