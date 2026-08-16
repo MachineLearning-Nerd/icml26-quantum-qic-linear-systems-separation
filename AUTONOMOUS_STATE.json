@@ -1,15 +1,22 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "openreview_id": "eTUljZ6e8c",
-  "phase": "claim_1_attempt_1_random_walk_oracle_toy_complete",
-  "next_action": "independent_claim_1_toy_review_then_claim_2_direct_formula_fixture",
+  "paper": "arXiv:2411.02087",
+  "phase": "dossier_published_claim_1_random_walk_toy_only",
+  "next_action": "update_collection_tracker_and_continue_with_next_repository",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
     "live_contract_saved",
     "source_pinned",
     "claim_1_protocol_scaffold",
-    "claim_1_attempt_1_local_random_walk_oracle_fixture"
+    "claim_1_attempt_1_local_random_walk_oracle_fixture",
+    "documented_claim_to_evidence_paths",
+    "documented_unverified_claim_boundaries",
+    "added_standardized_audit_dossier",
+    "verified_remote_repository_state",
+    "verified_fresh_clone_after_dossier_publication",
+    "verified_github_metadata_and_branch_inventory"
   ],
   "failed_attempts": [],
   "claim_attempt_counts": {
@@ -19,11 +26,23 @@
     "4": 0,
     "5": 0
   },
-  "last_checkpoint": "2026-08-12T21:39:43Z",
-  "last_known_git_commit": "c032533ee1315dc3549ca0b4a062c165e3923f45",
-  "publication_allowed": false,
+  "last_checkpoint": "2026-08-17",
+  "last_known_git_commit": "bcef52c2fec983e770e690784a10ca9c37b7ada8",
+  "publication_allowed": true,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
+  "former_github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-eTUljZ6e8c-quantum-qic-linear-systems",
+  "canonical_branch": "main",
+  "expected_branches": ["main"],
+  "historical_branch_count": 0,
+  "paper_pdf_sha256": "581d57e998439c2ad73b68f02dcf62fb3a54c655f6d8903c4767de2ce3968a70",
+  "paper_source_archive_sha256": "1729ecf6489a345ff10b6433ce8256a9bc88028dcf68b469e0dd2de50e223eb6",
+  "contract_manifest_sha256": "a5fe8f32a92be2d7bda9647535221a7d551b0f7cf76cb40c082340f1d4fe499f",
+  "evidence_boundary": "claim_1_finite_random_walk_mechanism_toy_only; claims_2_to_5_unverified; no_quantum_runtime_or_external_score",
+  "canonical_identity": {
+    "name": "MachineLearning-Nerd",
+    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com"
+  },
   "claim_1_outcome": {
     "verdict": "toy",
     "scope": "Clean-room finite height-4 two-binary-tree alternating-cycle random-walk oracle fixture with neighbor queries; not a QIC lower-bound proof or quantum runtime reproduction.",
@@ -32,9 +51,21 @@
   },
   "documentation": {
     "readme": "complete",
+    "claim_evidence": "complete",
+    "source_audit": "complete",
     "branch_audit": "complete",
+    "environment": "complete",
+    "report": "complete",
     "citation_and_thank_you": "complete",
     "repository_rename": "complete",
-    "final_publication_verification": "complete"
-  }
+    "manifest_and_verifier": "complete",
+    "final_publication_verification": "complete",
+    "fresh_clone_verification": "complete"
+  },
+  "recovery_bundle": {
+    "path": "/var/folders/zv/3dcsgf5s6kd8sm4xcbsjqp_w0000gn/T/icml-quantum-before-dossier.XXXXXX.BkstcuPxQr/quantum-before-dossier.bundle",
+    "sha256": "29d4b4f08e6301ed9de68199337a3e7918cff7c032dfd5a582ba2f2d85a482ff",
+    "verified_complete": true
+  },
+  "canonical_identity_policy": "all reachable commits use MachineLearning-Nerd attribution; no co-author trailers"
 }

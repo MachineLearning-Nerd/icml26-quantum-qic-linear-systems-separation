@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
+  "paper": {
+    "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
+    "arxiv": "2411.02087",
+    "openreview": "eTUljZ6e8c",
+    "source_pdf_sha256": "581d57e998439c2ad73b68f02dcf62fb3a54c655f6d8903c4767de2ce3968a70",
+    "source_archive_sha256": "1729ecf6489a345ff10b6433ce8256a9bc88028dcf68b469e0dd2de50e223eb6"
+  },
+  "claim_statuses": {
+    "C1": "TOY",
+    "C2": "UNVERIFIED",
+    "C3": "UNVERIFIED",
+    "C4": "UNVERIFIED",
+    "C5": "UNVERIFIED"
+  },
+  "required_audit_files": [
+    "README.md",
+    "STATUS.md",
+    "REPORT.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "BRANCH_AUDIT.md",
+    "ENVIRONMENT.md",
+    "AUTHOR_THANK_YOU.md",
+    "CITATION.cff",
+    "claims.json",
+    "EVIDENCE_MANIFEST.json",
+    "verify_final.py"
+  ],
+  "required_evidence_files": [
+    "contract/challenge_readme.md",
+    "contract/metadata.json",
+    "contract/live_claims.json",
+    "contract/contract_manifest.json",
+    "evidence/source/SHA256SUMS",
+    "evidence/source/arxiv.pdf",
+    "evidence/source/arxiv_source.tar.gz",
+    "evidence/source/source_inventory.txt",
+    "outputs/claim1_source_audit/SHA256SUMS",
+    "outputs/claim1_source_audit/result.json",
+    "outputs/claim1_random_walk_oracle_fixture/SHA256SUMS",
+    "outputs/claim1_random_walk_oracle_fixture/config.json",
+    "outputs/claim1_random_walk_oracle_fixture/results.csv",
+    "outputs/claim1_random_walk_oracle_fixture/summary.json",
+    "outputs/claim1_random_walk_oracle_fixture/run.log",
+    "src/claim1_source_audit.py",
+    "src/claim1_random_walk_oracle_fixture.py",
+    "tests/test_claim1_random_walk_oracle.py",
+    "tests/test_contract.py",
+    "logbook/claim-1.md",
+    "requirements.txt"
+  ],
+  "required_evidence_directories": [
+    "contract",
+    "evidence/source",
+    "outputs/claim1_source_audit",
+    "outputs/claim1_random_walk_oracle_fixture",
+    "src",
+    "tests",
+    "logbook"
+  ],
+  "branches": {
+    "expected_final": [
+      "main"
+    ],
+    "historical_remote_branch_count": 1,
+    "legacy_prefixes_removed": [
+      "orx/"
+    ]
+  },
+  "attribution": {
+    "name": "MachineLearning-Nerd",
+    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com",
+    "co_author_trailers_allowed": false
+  },
+  "evaluation_boundary": {
+    "official_code": null,
+    "external_compute": null,
+    "judge_score": null,
+    "author_endorsement": null,
+    "statement": "Only finite local Claim 1 mechanism evidence is published; Claims 2-5 and the full separation remain unverified."
+  },
+  "content_addressed_artifacts": [
+    {
+      "path": "AUTHOR_THANK_YOU.md",
+      "sha256": "2433435276fb8d4844dd58540cd91439e4987677b5eeb4234ddfc12c86040550"
+    },
+    {
+      "path": "BRANCH_AUDIT.md",
+      "sha256": "f2f9e647ca4625e25316c2d0f17602267293177afe29faf539d0b5ee19695377"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "1bd9975ed3d7aa4d4569134edd050935532c7d04d39006ce89754d51c9a617d9"
+    },
+    {
+      "path": "CLAIM_EVIDENCE.md",
+      "sha256": "e2b3e31cf160ce69265069071968c341cc65d6b5efef5a3a00730ea0bc61d628"
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "sha256": "b32c0c9b90986cb132b3d58314f0ab2f653f30e82ed03b16b2b679259177cef7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0da4ae339c76cf2eb3f37eec181561860d1e8674b69d78e3febaf5897f55169a"
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "0aaf0ebd9a89599617a5d134f02b4357d5ad6c99ceb40b80f36808fa5c22ed7d"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "sha256": "d3c12725266b938f57f913f30e2c7aa7bb1cf2d3f50f656833f578e075b8f91a"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "e1b3b7038c4a18eaf34ab56286191bf547887b7a7b34faf6bad197d2c93858c2"
+    },
+    {
+      "path": "branch-audit.md",
+      "sha256": "11aa25bf14e46271e454000780773e8f32619cb5a926072bf948a5aeb047d14c"
+    },
+    {
+      "path": "claims.json",
+      "sha256": "2036168dc91fbbde878f8a56cfbc8d0aefbdf558c066ff19193b8426a10efc36"
+    },
+    {
+      "path": "verify_final.py",
+      "sha256": "d0948aeccbfabd49aecb7394e86bac6c15316016a2399c6b331b11fabc4230a6"
+    },
+    {
+      "path": "contract/challenge_readme.md",
+      "sha256": "027f66e6da758c4a0d75fff6c9298e5322dde64d21a97d33e4367e42c3a421c5"
+    },
+    {
+      "path": "contract/contract_manifest.json",
+      "sha256": "a5fe8f32a92be2d7bda9647535221a7d551b0f7cf76cb40c082340f1d4fe499f"
+    },
+    {
+      "path": "contract/live_claims.json",
+      "sha256": "e1dabeadc76e4f7be48b96eb8819e2c1c339f324adc85ce857d2e0ec3aff4121"
+    },
+    {
+      "path": "contract/metadata.json",
+      "sha256": "4f02b4203d25ce9ca7947f431225d97f646f0cbd33af1060249140a60c8ed823"
+    },
+    {
+      "path": "evidence/source/SHA256SUMS",
+      "sha256": "c8616035fbac1f710f89041106141aa287cd0d18356bd8c48dfc9ee1743817b7"
+    },
+    {
+      "path": "evidence/source/arxiv.pdf",
+      "sha256": "581d57e998439c2ad73b68f02dcf62fb3a54c655f6d8903c4767de2ce3968a70"
+    },
+    {
+      "path": "evidence/source/arxiv_source.tar.gz",
+      "sha256": "1729ecf6489a345ff10b6433ce8256a9bc88028dcf68b469e0dd2de50e223eb6"
+    },
+    {
+      "path": "evidence/source/source_inventory.txt",
+      "sha256": "1929e58b1eca875a08be018e855ee795236f89cab26a7cdf57bbd7d2387e967d"
+    },
+    {
+      "path": "outputs/claim1_source_audit/SHA256SUMS",
+      "sha256": "b13a107f3cd368cbbba33a08bcf2dc0d4796f8f728f388383d94787e7ef9ff5f"
+    },
+    {
+      "path": "outputs/claim1_source_audit/result.json",
+      "sha256": "77ecbfc37f1df96dc38bbb298f2f393c5f1a67582c3ed6766b9cac8aa397b49c"
+    },
+    {
+      "path": "outputs/claim1_random_walk_oracle_fixture/SHA256SUMS",
+      "sha256": "0bd9eaa5ae90bd833fcc847af273f27e3bb0d533080df7b177e8ec3466c8e977"
+    },
+    {
+      "path": "outputs/claim1_random_walk_oracle_fixture/config.json",
+      "sha256": "d9f129c44ccdee281e44a666c6dcca961a6aaf11caf8bdc488edea55fb052e48"
+    },
+    {
+      "path": "outputs/claim1_random_walk_oracle_fixture/results.csv",
+      "sha256": "2cb4bed8be79b10af61ebfe4763e67785b7c4ca9856c45569bc2dcb3153a0055"
+    },
+    {
+      "path": "outputs/claim1_random_walk_oracle_fixture/run.log",
+      "sha256": "da7df49defa473140f8acdf13c1855febeefb81d96d710d4269e05561caeb470"
+    },
+    {
+      "path": "outputs/claim1_random_walk_oracle_fixture/summary.json",
+      "sha256": "76ca7a8174837012fc83f7947eacb1101e7076e2020c8ab10bf2132a9af59386"
+    },
+    {
+      "path": "src/claim1_random_walk_oracle_fixture.py",
+      "sha256": "6a5b950d3f4450cbf4e54b9e35e1f31b3630d5f6642fbc1f523829a1ac8c2dbc"
+    },
+    {
+      "path": "src/claim1_source_audit.py",
+      "sha256": "0846f6c47730f76438ea42c28f4e636a98e83e44e87a7fe42ecccdd564f0e757"
+    },
+    {
+      "path": "tests/test_claim1_random_walk_oracle.py",
+      "sha256": "e30126bafcfea797faaeefac73bfb5c3eb39066361dff9ecb6214a9245cd8675"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "sha256": "d6eb5e56ed511adab48d0b250313decd4f1afd18d4ab874f3991a660b56fa2e3"
+    },
+    {
+      "path": "logbook/claim-1.md",
+      "sha256": "19aa687db4e60824bd135c78fe7623a5fd2862c0063ad203798637222d95b177"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "a0e201ecda2bc871726ea3bb5db9cfe6b2109f60d8da88eecf910b790794b03d"
+    }
+  ]
+}

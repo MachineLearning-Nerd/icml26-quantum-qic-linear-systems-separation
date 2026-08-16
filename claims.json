@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "repository": "MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
+  "previous_repository": "MachineLearning-Nerd/icml26-repro-eTUljZ6e8c-quantum-qic-linear-systems",
+  "overall_status": "PARTIAL_TOY_ONLY",
+  "paper": {
+    "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
+    "arxiv": "2411.02087",
+    "openreview": "eTUljZ6e8c",
+    "authors": [
+      "Allan Grønlund",
+      "Kasper Green Larsen"
+    ],
+    "venue_record": "ICML 2026",
+    "pdf_sha256": "581d57e998439c2ad73b68f02dcf62fb3a54c655f6d8903c4767de2ce3968a70",
+    "source_archive_sha256": "1729ecf6489a345ff10b6433ce8256a9bc88028dcf68b469e0dd2de50e223eb6",
+    "official_code": null,
+    "official_code_status": "no_author_executable_identified_in_pinned_source_archive"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "paper_anchor": "Theorem 1",
+      "status": "TOY",
+      "scope": "Finite height-4 two-tree alternating-cycle random-walk oracle mechanism",
+      "producer": "src/claim1_random_walk_oracle_fixture.py::main",
+      "independent_checker": "tests/test_claim1_random_walk_oracle.py",
+      "evidence": [
+        "outputs/claim1_source_audit/result.json",
+        "outputs/claim1_random_walk_oracle_fixture/config.json",
+        "outputs/claim1_random_walk_oracle_fixture/results.csv",
+        "outputs/claim1_random_walk_oracle_fixture/summary.json",
+        "outputs/claim1_random_walk_oracle_fixture/SHA256SUMS",
+        "evidence/source/source_inventory.txt",
+        "logbook/claim-1.md"
+      ],
+      "limitation": "Does not establish the QIC query lower bound, quantum upper bound, matrix reduction, or asymptotic separation."
+    },
+    {
+      "id": "C2",
+      "paper_anchor": "Equation 1",
+      "status": "UNVERIFIED",
+      "scope": "Quantum sparse-linear-system upper-bound scaling",
+      "producer": null,
+      "independent_checker": null,
+      "evidence": [],
+      "limitation": "No quantum implementation, runtime measurement, or precision scaling audit is committed."
+    },
+    {
+      "id": "C3",
+      "paper_anchor": "Theorem 2 and Section 2.1",
+      "status": "UNVERIFIED",
+      "scope": "Random-walk oracle to sparse-matrix QIC reduction",
+      "producer": null,
+      "independent_checker": null,
+      "evidence": [],
+      "limitation": "The finite random-walk toy is not an independent proof of the oracle-to-matrix reduction."
+    },
+    {
+      "id": "C4",
+      "paper_anchor": "Lemma 2",
+      "status": "UNVERIFIED",
+      "scope": "Target-root solution-component squared-mass lower bound",
+      "producer": null,
+      "independent_checker": null,
+      "evidence": [],
+      "limitation": "No independent matrix, spectrum, inverse solution, or target-root mass certificate is committed."
+    },
+    {
+      "id": "C5",
+      "paper_anchor": "Section 1 conclusion",
+      "status": "UNVERIFIED",
+      "scope": "End-to-end exponential quantum-versus-QIC separation",
+      "producer": null,
+      "independent_checker": null,
+      "evidence": [],
+      "limitation": "No end-to-end QIC query or quantum-runtime comparison is committed."
+    }
+  ],
+  "attribution": {
+    "name": "MachineLearning-Nerd",
+    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com",
+    "author_and_committer_required": true,
+    "co_author_trailers_allowed": false
+  },
+  "evaluation_boundary": {
+    "historical_judge_score": null,
+    "current_score_claim": null,
+    "forecast": null,
+    "interpretation": "No external judge score, author implementation, or author endorsement is claimed."
+  }
+}

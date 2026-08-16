@@ -12,13 +12,32 @@ This is an independent reproduction/audit repository, not an author-maintained i
 
 **Overall: partial, toy-level evidence only.**
 
+Machine-readable status labels are TOY and UNVERIFIED; neither label claims a
+full theorem reproduction.
+
 Claim 1 has a finite random-walk oracle fixture. It builds two height-4 binary trees joined by an alternating leaf cycle, runs five fixed-seed batches of 10,000 walks for 256 steps, and includes a destructive disconnected control. This checks a reduced graph mechanism, not the QIC lower bound, the quantum algorithm, or the claimed exponential separation. Claims 2–5 have not been independently reproduced.
+
+## Audit dossier
+
+The standardized audit record is split into reviewable files:
+
+- CLAIM_EVIDENCE.md maps each claim to its producer, evidence, status, and limitation.
+- SOURCE_AUDIT.md pins the paper snapshot, contract, source inventory, and claim anchors.
+- BRANCH_AUDIT.md records the final branch map and commit attribution.
+- ENVIRONMENT.md records the fixed local command, checksums, and compute boundary.
+- REPORT.md states the scoped decision and what remains unverified.
+- CITATION.cff and AUTHOR_THANK_YOU.md provide citation and author acknowledgement.
+- EVIDENCE_MANIFEST.json content-addresses the dossier and source/evidence inputs.
+- verify_final.py performs fail-closed checks on a local or fresh clone.
+
+The dossier is a documentation and provenance publication. It does not change
+the Claim 1 toy verdict or imply that Claims 2–5 have been reproduced.
 
 | Paper claim | Repository status | What the evidence supports |
 | --- | --- | --- |
 | Theorem 1: QIC algorithms require a polynomial/exponential-in-input-dimension query lower bound while quantum linear-system algorithms are polylogarithmic in the dimension under the stated promises | **Toy only** | The finite oracle fixture is compatible with the random-walk intuition; it does not construct a hard matrix, simulate a QIC algorithm, or prove a query lower bound. |
 | Equation 1: quantum upper-bound scaling in sparsity, condition number, precision, and dimension | **Unverified** | `outputs/claim1_source_audit/result.json` records a finite source audit of the variables; no quantum runtime was implemented. |
-| Theorem 2 / Section 2.1: hardness reduces to a random-walk oracle game on two binary trees | **Toy only** | The two-tree alternating-cycle graph and a neighbor-query random walk are executable at height 4; the paper’s reduction is not independently proved. |
+| Theorem 2 / Section 2.1: hardness reduces to a random-walk oracle game on two binary trees | **Unverified** | The finite graph is a mechanism diagnostic only; the oracle-to-matrix reduction and its query accounting are not independently proved. |
 | Lemma 2: the target-root solution component has squared mass `Omega(n^-5)` relative to the solution norm | **Unverified** | No independent spectral or linear-system calculation has been completed. |
 | Section 1: the result establishes a first natural exponential quantum-versus-QIC separation | **Unverified** | No end-to-end comparison of QIC queries and quantum runtime is present. |
 

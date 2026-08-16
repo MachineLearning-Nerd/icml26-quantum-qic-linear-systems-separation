@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this audit or its outputs, please cite the original paper and this repository."
+title: "ICML 2026 Quantum/QIC Linear-System Separation Claim Audit"
+version: "1.0.0"
+date-released: 2026-08-17
+authors:
+  - name: MachineLearning-Nerd
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation"
+url: "https://github.com/MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation"
+references:
+  - type: article
+    title: "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems"
+    authors:
+      - given-names: Allan
+        family-names: Grønlund
+      - given-names: Kasper Green
+        family-names: Larsen
+    year: 2024
+    url: "https://arxiv.org/abs/2411.02087"
+    doi: "10.48550/arXiv.2411.02087"
+    identifiers:
+      - type: arxiv
+        value: "2411.02087"
