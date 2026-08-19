@@ -421,7 +421,7 @@ def verify_ledgers_and_state() -> None:
     identity = state.get("canonical_identity", {})
     if identity.get("name") != CANONICAL_NAME or identity.get("email") != CANONICAL_EMAIL:
         fail("state canonical identity is wrong")
-    if identity.get("verified_reachable_commits") != 13:
+    if identity.get("verified_reachable_commits") != 14:
         fail("state reachable commit checkpoint is wrong")
     if state.get("phase") not in {
         "dossier_ready_for_publication",

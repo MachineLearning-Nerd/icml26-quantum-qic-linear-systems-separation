@@ -140,11 +140,11 @@
     },
     {
       "path": "AUTONOMOUS_STATE.json",
-      "sha256": "7f316a11aa55c6b37fa0912a8b7810707172b528463c2aca26fa77b7f35150d0"
+      "sha256": "86e57344ee77b713b415e13a929018006f3d53c649d2270273b47189e856be73"
     },
     {
       "path": "verify_final.py",
-      "sha256": "352a3bf434baa41eccb07696ad3b09263c39239e87fff2953a88b6f71f9ec917"
+      "sha256": "f13c7f369a185cce0be22437160f246f3caba0b7b32a454885b121c0eed5a385"
     },
     {
       "path": "contract/challenge_readme.md",
