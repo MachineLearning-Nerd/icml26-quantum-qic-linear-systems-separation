@@ -14,8 +14,13 @@ This is an independent reproduction/audit repository, not an author-maintained i
 
 Machine-readable status labels are TOY and UNVERIFIED; neither label claims a
 full theorem reproduction.
+Machine-readable overall verdict: PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED.
 
 Claim 1 has a finite random-walk oracle fixture. It builds two height-4 binary trees joined by an alternating leaf cycle, runs five fixed-seed batches of 10,000 walks for 256 steps, and includes a destructive disconnected control. This checks a reduced graph mechanism, not the QIC lower bound, the quantum algorithm, or the claimed exponential separation. Claims 2–5 have not been independently reproduced.
+
+Publication boundary: publication_allowed=false for a complete paper
+reproduction or score. This repository publishes a scoped toy-level dossier
+only; score_claim=false and official_author_endorsement=false.
 
 ## Audit dossier
 
@@ -27,6 +32,10 @@ The standardized audit record is split into reviewable files:
 - ENVIRONMENT.md records the fixed local command, checksums, and compute boundary.
 - REPORT.md states the scoped decision and what remains unverified.
 - CITATION.cff and AUTHOR_THANK_YOU.md provide citation and author acknowledgement.
+- claims.json and reproduction_verdicts.json provide machine-readable claim
+  statuses, production paths, and publication boundaries.
+- AUTONOMOUS_STATE.json records the resumable audit state and canonical
+  attribution checkpoint.
 - EVIDENCE_MANIFEST.json content-addresses the dossier and source/evidence inputs.
 - verify_final.py performs fail-closed checks on a local or fresh clone.
 

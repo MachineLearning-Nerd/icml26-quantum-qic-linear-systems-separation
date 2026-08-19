@@ -16,9 +16,7 @@ EXPECTED_REPOSITORY = (
     "icml26-quantum-qic-linear-systems-separation"
 )
 CANONICAL_NAME = "MachineLearning-Nerd"
-CANONICAL_EMAIL = (
-    "37579156+MachineLearning-Nerd@users.noreply.github.com"
-)
+CANONICAL_EMAIL = "MachineLearning-Nerd@users.noreply.github.com"
 EXPECTED_PDF_SHA = (
     "581d57e998439c2ad73b68f02dcf62fb3a54c655f6d8903c4767de2ce3968a70"
 )
@@ -36,6 +34,8 @@ EXPECTED_CLAIMS = {
     "C4": "UNVERIFIED",
     "C5": "UNVERIFIED",
 }
+EXPECTED_OVERALL_VERDICT = "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED"
+EXPECTED_PUBLICATION_BOUNDARY = "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION"
 REQUIRED_FILES = {
     "README.md",
     "STATUS.md",
@@ -47,11 +47,12 @@ REQUIRED_FILES = {
     "AUTHOR_THANK_YOU.md",
     "CITATION.cff",
     "claims.json",
+    "reproduction_verdicts.json",
     "EVIDENCE_MANIFEST.json",
     "verify_final.py",
     "AUTONOMOUS_STATE.json",
 }
-EXPECTED_AUDIT_FILES = REQUIRED_FILES - {"AUTONOMOUS_STATE.json"}
+EXPECTED_AUDIT_FILES = REQUIRED_FILES
 EXPECTED_EVIDENCE_FILES = {
     "contract/challenge_readme.md",
     "contract/metadata.json",
@@ -211,6 +212,14 @@ def verify_manifest() -> None:
         fail("manifest repository marker is wrong")
     if manifest.get("claim_statuses") != EXPECTED_CLAIMS:
         fail("manifest claim statuses are wrong")
+    if (
+        manifest.get("overall_verdict") != EXPECTED_OVERALL_VERDICT
+        or manifest.get("publication_allowed") is not False
+        or manifest.get("publication_boundary") != EXPECTED_PUBLICATION_BOUNDARY
+        or manifest.get("score_claim") is not False
+        or manifest.get("official_author_endorsement") is not False
+    ):
+        fail("manifest publication boundary is wrong")
     if set(manifest.get("required_audit_files", [])) != EXPECTED_AUDIT_FILES:
         fail("manifest audit-file list is wrong")
     if set(manifest.get("required_evidence_files", [])) != EXPECTED_EVIDENCE_FILES:
@@ -350,6 +359,7 @@ def verify_evidence() -> None:
 
 def verify_ledgers_and_state() -> None:
     claims = read_json("claims.json")
+    reproduction = read_json("reproduction_verdicts.json")
     state = read_json("AUTONOMOUS_STATE.json")
     if not isinstance(claims, dict) or not isinstance(state, dict):
         fail("claim ledger and state must be JSON objects")
@@ -359,6 +369,27 @@ def verify_ledgers_and_state() -> None:
         fail("claims.json statuses are wrong")
     if claims.get("repository") != EXPECTED_REPOSITORY:
         fail("claims.json repository marker is wrong")
+    if (
+        claims.get("overall_verdict") != EXPECTED_OVERALL_VERDICT
+        or claims.get("publication_allowed") is not False
+        or claims.get("publication_boundary") != EXPECTED_PUBLICATION_BOUNDARY
+        or claims.get("score_claim") is not False
+        or claims.get("official_author_endorsement") is not False
+    ):
+        fail("claims.json publication boundary is wrong")
+    if (
+        reproduction.get("repository") != EXPECTED_REPOSITORY
+        or reproduction.get("overall_verdict") != EXPECTED_OVERALL_VERDICT
+        or reproduction.get("publication_allowed") is not False
+        or reproduction.get("publication_boundary") != EXPECTED_PUBLICATION_BOUNDARY
+        or reproduction.get("score_claim") is not False
+        or reproduction.get("official_author_endorsement") is not False
+        or {
+            row.get("id"): row.get("status")
+            for row in reproduction.get("claims", [])
+        } != EXPECTED_CLAIMS
+    ):
+        fail("reproduction verdict boundary is wrong")
     paper = claims.get("paper", {})
     if paper.get("pdf_sha256") != EXPECTED_PDF_SHA:
         fail("claims.json PDF source hash is wrong")
@@ -372,6 +403,15 @@ def verify_ledgers_and_state() -> None:
         fail("state branch set is wrong")
     if state.get("historical_branch_count") != 0:
         fail("state historical branch count is wrong")
+    if (
+        state.get("overall_verdict") != EXPECTED_OVERALL_VERDICT
+        or state.get("publication_allowed") is not False
+        or state.get("publication_boundary") != EXPECTED_PUBLICATION_BOUNDARY
+        or state.get("score_claim") is not False
+        or state.get("official_author_endorsement") is not False
+        or state.get("branch_count") != len(EXPECTED_BRANCHES)
+    ):
+        fail("state publication boundary is wrong")
     if state.get("paper_pdf_sha256") != EXPECTED_PDF_SHA:
         fail("state PDF source hash is wrong")
     if state.get("paper_source_archive_sha256") != EXPECTED_SOURCE_ARCHIVE_SHA:
@@ -381,9 +421,12 @@ def verify_ledgers_and_state() -> None:
     identity = state.get("canonical_identity", {})
     if identity.get("name") != CANONICAL_NAME or identity.get("email") != CANONICAL_EMAIL:
         fail("state canonical identity is wrong")
+    if identity.get("verified_reachable_commits") != 13:
+        fail("state reachable commit checkpoint is wrong")
     if state.get("phase") not in {
         "dossier_ready_for_publication",
         "dossier_published_claim_1_random_walk_toy_only",
+        "published_scoped_partial_audit",
     }:
         fail("state phase is not a dossier phase")
 
@@ -401,7 +444,14 @@ def verify_documentation() -> None:
         "REPORT.md",
         "CITATION.cff",
         "AUTHOR_THANK_YOU.md",
+        "claims.json",
+        "reproduction_verdicts.json",
+        "AUTONOMOUS_STATE.json",
         "EVIDENCE_MANIFEST.json",
+        "publication_allowed=false",
+        "score_claim=false",
+        "official_author_endorsement=false",
+        "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED",
         "TOY",
         "UNVERIFIED",
         "verify_final.py",
@@ -410,7 +460,7 @@ def verify_documentation() -> None:
             fail(f"README is missing marker {marker!r}")
     status = (ROOT / "STATUS.md").read_text(encoding="utf-8")
     for marker in (
-        "dossier_published_claim_1_random_walk_toy_only",
+        "published_scoped_partial_audit",
         "Evidence boundary",
         "Verification status",
     ):

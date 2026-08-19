@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
+  "paper": {
+    "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
+    "authors": ["Allan Grønlund", "Kasper Green Larsen"],
+    "arxiv": "2411.02087",
+    "openreview_id": "eTUljZ6e8c"
+  },
+  "overall_verdict": "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED",
+  "publication_allowed": false,
+  "publication_boundary": "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION",
+  "score_claim": false,
+  "official_author_endorsement": false,
+  "claims": [
+    {
+      "id": "C1",
+      "status": "TOY",
+      "status_detail": "FINITE_RANDOM_WALK_MECHANISM_TOY_ONLY",
+      "production_path": [
+        "src/claim1_source_audit.py::main",
+        "src/claim1_random_walk_oracle_fixture.py::main",
+        "tests/test_claim1_random_walk_oracle.py"
+      ],
+      "claim_boundary": "The height-4 connected two-tree alternating-cycle fixture changes target-root reachability and the disconnected control gives zero hits; this is not a QIC lower-bound proof, quantum runtime reproduction, or asymptotic separation.",
+      "evidence": [
+        "outputs/claim1_source_audit/result.json",
+        "outputs/claim1_random_walk_oracle_fixture/config.json",
+        "outputs/claim1_random_walk_oracle_fixture/results.csv",
+        "outputs/claim1_random_walk_oracle_fixture/summary.json",
+        "outputs/claim1_random_walk_oracle_fixture/SHA256SUMS",
+        "evidence/source/source_inventory.txt",
+        "logbook/claim-1.md"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "UNVERIFIED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "Quantum sparse-linear-system scaling and precision/runtime dependence still need an independent audit.",
+      "evidence": []
+    },
+    {
+      "id": "C3",
+      "status": "UNVERIFIED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "The random-walk oracle to sparse-matrix QIC reduction and query accounting still need an independent audit.",
+      "evidence": []
+    },
+    {
+      "id": "C4",
+      "status": "UNVERIFIED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "The target-root solution-component mass and spectral certificate still need an independent audit.",
+      "evidence": []
+    },
+    {
+      "id": "C5",
+      "status": "UNVERIFIED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "The end-to-end exponential quantum-versus-QIC separation still needs a source-faithful comparison.",
+      "evidence": []
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 {
   "schema_version": 1,
   "repository": "MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
+  "overall_verdict": "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED",
+  "publication_allowed": false,
+  "publication_boundary": "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION",
+  "score_claim": false,
+  "official_author_endorsement": false,
   "paper": {
     "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
     "arxiv": "2411.02087",
@@ -26,6 +31,8 @@
     "AUTHOR_THANK_YOU.md",
     "CITATION.cff",
     "claims.json",
+    "reproduction_verdicts.json",
+    "AUTONOMOUS_STATE.json",
     "EVIDENCE_MANIFEST.json",
     "verify_final.py"
   ],
@@ -72,7 +79,7 @@
   },
   "attribution": {
     "name": "MachineLearning-Nerd",
-    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com",
+    "email": "MachineLearning-Nerd@users.noreply.github.com",
     "co_author_trailers_allowed": false
   },
   "evaluation_boundary": {
@@ -105,11 +112,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "0da4ae339c76cf2eb3f37eec181561860d1e8674b69d78e3febaf5897f55169a"
+      "sha256": "6a0d844b2b6055bfdaed2fb838df34d2b96c395e42f3910a85c5d857d7a64a46"
     },
     {
       "path": "REPORT.md",
-      "sha256": "0aaf0ebd9a89599617a5d134f02b4357d5ad6c99ceb40b80f36808fa5c22ed7d"
+      "sha256": "ab5c853c1973594eb0487ac69d6f5770d0d5ce572d0dcde12f2a20f0dd9aa9d2"
     },
     {
       "path": "SOURCE_AUDIT.md",
@@ -117,7 +124,7 @@
     },
     {
       "path": "STATUS.md",
-      "sha256": "e1b3b7038c4a18eaf34ab56286191bf547887b7a7b34faf6bad197d2c93858c2"
+      "sha256": "1510cebfea4fd594388d233a4aa899f5194e9e1008ba3b48a0b52599d13d30c4"
     },
     {
       "path": "branch-audit.md",
@@ -125,11 +132,19 @@
     },
     {
       "path": "claims.json",
-      "sha256": "2036168dc91fbbde878f8a56cfbc8d0aefbdf558c066ff19193b8426a10efc36"
+      "sha256": "da00145ad2c55cc4a27493ca01a5d8ee8394fbb82203858b8e4aad8ab9cb9b48"
+    },
+    {
+      "path": "reproduction_verdicts.json",
+      "sha256": "06c1ebefaec68f13d268f9129c4643d0bbd0a090a6a6ed4cdf970151521db6d7"
+    },
+    {
+      "path": "AUTONOMOUS_STATE.json",
+      "sha256": "7f316a11aa55c6b37fa0912a8b7810707172b528463c2aca26fa77b7f35150d0"
     },
     {
       "path": "verify_final.py",
-      "sha256": "d0948aeccbfabd49aecb7394e86bac6c15316016a2399c6b331b11fabc4230a6"
+      "sha256": "352a3bf434baa41eccb07696ad3b09263c39239e87fff2953a88b6f71f9ec917"
     },
     {
       "path": "contract/challenge_readme.md",

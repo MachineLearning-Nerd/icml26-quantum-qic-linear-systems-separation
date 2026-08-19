@@ -2,7 +2,7 @@
   "schema_version": 2,
   "openreview_id": "eTUljZ6e8c",
   "paper": "arXiv:2411.02087",
-  "phase": "dossier_published_claim_1_random_walk_toy_only",
+  "phase": "published_scoped_partial_audit",
   "next_action": "update_collection_tracker_and_continue_with_next_repository",
   "active_run_ids": [],
   "completed_milestones": [
@@ -26,10 +26,15 @@
     "4": 0,
     "5": 0
   },
-  "last_checkpoint": "2026-08-17",
-  "last_known_git_commit": "cec8455ddd76d75370847bbc40236629ffc3d061",
-  "published_dossier_commit": "cec8455ddd76d75370847bbc40236629ffc3d061",
-  "publication_allowed": true,
+  "last_checkpoint": "2026-08-19",
+  "last_known_git_commit": "b8a744f25d1e436213a359e2c15d8e46fa09eb65",
+  "published_dossier_commit": "b8a744f25d1e436213a359e2c15d8e46fa09eb65",
+  "publication_allowed": false,
+  "overall_verdict": "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED",
+  "publication_boundary": "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION",
+  "score_claim": false,
+  "official_author_endorsement": false,
+  "branch_count": 1,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
   "former_github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-eTUljZ6e8c-quantum-qic-linear-systems",
@@ -42,7 +47,8 @@
   "evidence_boundary": "claim_1_finite_random_walk_mechanism_toy_only; claims_2_to_5_unverified; no_quantum_runtime_or_external_score",
   "canonical_identity": {
     "name": "MachineLearning-Nerd",
-    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com"
+    "email": "MachineLearning-Nerd@users.noreply.github.com",
+    "verified_reachable_commits": 13
   },
   "claim_1_outcome": {
     "verdict": "toy",
@@ -68,5 +74,21 @@
     "sha256": "29d4b4f08e6301ed9de68199337a3e7918cff7c032dfd5a582ba2f2d85a482ff",
     "verified_complete": true
   },
+  "dossier_files": [
+    "README.md",
+    "STATUS.md",
+    "REPORT.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "BRANCH_AUDIT.md",
+    "ENVIRONMENT.md",
+    "AUTHOR_THANK_YOU.md",
+    "CITATION.cff",
+    "claims.json",
+    "reproduction_verdicts.json",
+    "EVIDENCE_MANIFEST.json",
+    "verify_final.py",
+    "AUTONOMOUS_STATE.json"
+  ],
   "canonical_identity_policy": "all reachable commits use MachineLearning-Nerd attribution; no co-author trailers"
 }

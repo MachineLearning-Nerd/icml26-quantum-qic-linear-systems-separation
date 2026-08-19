@@ -3,6 +3,11 @@
   "repository": "MachineLearning-Nerd/icml26-quantum-qic-linear-systems-separation",
   "previous_repository": "MachineLearning-Nerd/icml26-repro-eTUljZ6e8c-quantum-qic-linear-systems",
   "overall_status": "PARTIAL_TOY_ONLY",
+  "overall_verdict": "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED",
+  "publication_allowed": false,
+  "publication_boundary": "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION",
+  "score_claim": false,
+  "official_author_endorsement": false,
   "paper": {
     "title": "An Exponential Separation Between Quantum and Quantum-Inspired Classical Algorithms for Linear Systems",
     "arxiv": "2411.02087",
@@ -79,7 +84,7 @@
   ],
   "attribution": {
     "name": "MachineLearning-Nerd",
-    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com",
+    "email": "MachineLearning-Nerd@users.noreply.github.com",
     "author_and_committer_required": true,
     "co_author_trailers_allowed": false
   },

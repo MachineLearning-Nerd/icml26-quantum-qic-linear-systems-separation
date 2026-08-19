@@ -9,6 +9,11 @@ with a matched destructive control. This is useful evidence for a reduced
 mechanism, but it is not a reproduction of the paper’s QIC lower bound,
 quantum upper bound, or exponential separation.
 
+Machine-readable overall verdict: PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_5_UNVERIFIED.
+The publication boundary is publication_allowed=false for a complete
+reproduction or score; score_claim=false and
+official_author_endorsement=false.
+
 ## Claim decisions
 
 - C1 is **TOY**: the connected fixture reaches the target root with mean
@@ -33,4 +38,5 @@ disclosed as version context, not used to rewrite the pinned snapshot.
 The repository uses the canonical
 icml26-quantum-qic-linear-systems-separation name, a single documented main
 branch, canonical MachineLearning-Nerd attribution, a claim-to-evidence
-dossier, citation, author thanks, content manifest, and fail-closed verifier.
+dossier, machine-readable verdicts/state, citation, author thanks, content
+manifest, and fail-closed verifier.
